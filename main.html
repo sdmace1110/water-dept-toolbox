@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WWD - TOOLBOX</title>
+</head>
+<body>
+    
+    <main>
+        <div id="main-header">
+            This is main header
+        </div>
+        <div id="main-content">
+            <div id="links"></div>
+            <div id="content">
+                <div id="home" class="show content-col">HOME</div>
+                <div id="area" class="hide content-col">
+                    <h1>AREA</h1>
+                    <p>
+                        Rectangle:   Area, ft<sup>2</sup> = (Length, ft)(Width, ft)
+                    </p>
+                    <p>
+                        Circle:      Area, ft<sup>2</sup> = (0.785)(Diameter, ft)<sup>2</sup>
+                    </p>
+
+                    <div style="margin: 1.5em; padding: .4em;">
+                        For rectangular area: 
+                        <label>Length</label>
+                        <input for="number" id="areaRectLen" />
+                        <label>Width</label>
+                        <input for="number" id="areaRectWidth" /> 
+                        <button onclick="computeAreaRect()">Computer Retangular Area</button>
+                        <div id="areaRectResult"></div>
+                    </div>
+
+                    <div style="margin: 1.5em; padding: .4em;">
+                        For circular area:
+                        <label>Diameter</label>
+                        <input for="number" id="areaCircDiam" />
+                        <button onclick="computeAreaCirc()">Computer Circular Area</button>
+                        <div id="areaCircResult"></div>
+                    </div>
+                </div>
+                <div id="hardness" class="hide content-col">HARDNESS</div>
+                <div id="feeders" class="hide content-col">FEEDERS</div>
+                <div id="chlorination" class="hide content-col">CHLORINATION</div>
+                <div id="coag" class="hide content-col">COAG</div>
+                <div id="convfactors" class="hide content-col">CONVERSION FACTORS</div>
+                <div id="corrosion" class="hide content-col">CORROSION</div>
+                <div id="density" class="hide content-col">DENSITY</div>
+                <div id="detention" class="hide content-col">DETENTION1</div>
+                <div id="dosage" class="hide content-col">DOSAGE</div>
+                <div id="filtration" class="hide content-col">FILTRATION</div>
+                <div id="flow" class="hide content-col">FLOW</div>
+                <div id="flowchart" class="hide content-col">FLOW CHART</div>
+                <div id="fluoridation" class="hide content-col">FLUORIDATION</div>
+                <div id="jar" class="hide content-col">JAR</div>
+                <div id="lime" class="hide content-col">LIME</div>
+                <div id="metric" class="hide content-col">METRIC</div>
+                <div id="mix" class="hide content-col">MIX</div>
+                <div id="pounds" class="hide content-col">POUNDS</div>
+                <div id="poundsgal" class="hide content-col">POUNDS GAL</div>
+                <div id="power" class="hide content-col">POWER</div>
+                <div id="prelim" class="hide content-col">PRELIM</div>
+                <div id="pumps" class="hide content-col">PUMPS</div>
+                <div id="sedimentation" class="hide content-col">SEDIMENTATION</div>
+                <div id="soft" class="hide content-col">SOFT</div>
+                <div id="solprep" class="hide content-col">SOL PREP</div>
+                <div id="specgrav" class="hide content-col">SPECIFIC GRAVITY</div>
+                <div id="bleach" class="hide content-col">BLEACH</div>
+                <div id="temp" class="hide content-col">TEMPERATURE</div>
+                <div id="volume" class="hide content-col">VOLUME</div>
+                <div id="well" class="hide content-col">WELL</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="data.js"></script>
+</body>
+</html>
